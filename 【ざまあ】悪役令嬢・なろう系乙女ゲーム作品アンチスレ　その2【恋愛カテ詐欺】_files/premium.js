@@ -1,0 +1,3 @@
+function readCookie(t){for(var n=t+"=",e=document.cookie.split(";"),i=0;i<e.length;i++){for(var o=e[i];" "==o.charAt(0);)o=o.substring(1,o.length);if(0==o.indexOf(n))return o.substring(n.length,o.length)}
+return null}
+(function(){var roninCookie=readCookie("sid");if(roninCookie!=null){$.getScript("//penguin.5ch.net/js/header_active.js",function(data,textStatus,jqxhr){});}else{$.getScript("//penguin.5ch.net/js/header_inactive.js",function(data,textStatus,jqxhr){});}})();
